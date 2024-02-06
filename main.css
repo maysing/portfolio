@@ -43,10 +43,11 @@
 
 header {
     height: 80px;
+    width: 100%;
     position: absolute;
     display: flex;
+    justify-content: center;
     z-index: 2;
-    justify-content: space-between;
 }
 
 h2 {
@@ -57,7 +58,7 @@ h2 {
 }
 
 .menu-items {
-    position: absolute;
+   margin-left: 1000px;
     margin-top: 45px;
     left: 500%;
     text-align: right;
@@ -72,6 +73,25 @@ h2 {
     font-size: 20;
     text-align: right;
 }
+
+
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    width: 350px;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 50px;
+  }
+
+
+  .sections a {
+    text-decoration: none;
+    color: yellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
 
 #introduction {
 color: rgb(255, 255, 255);
