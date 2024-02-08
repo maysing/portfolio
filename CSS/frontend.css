@@ -1,0 +1,76 @@
+* {
+    background-color: black;
+}
+
+header {
+    color: #ffffff;
+    border-bottom: 2px solid rgb(160, 1, 150);
+}
+
+.logo {
+    color: #ffffff;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    margin: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.sections a {
+    color: #ffffff;
+}
+
+#game-video {
+    width: 40%;
+    margin: 40px;
+}
+
+/* .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;    
+    grid-template-areas:
+    "intro intro2"
+    "sidebar content"
+    "footer footer"
+    "extra extra"
+    ;
+}
+
+.intro {
+    grid-area: intro;
+    height: fit-content;
+    background-color: aqua;
+}
+
+.intro2 {
+    grid-area: intro2;
+    height: fit-content;
+    background-color: blueviolet;
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto; /* Two columns of equal width */
+    grid-template-rows: auto auto auto; /* Three rows of equal height */
+    gap: 10px; /* Gap between grid items */
+}
+
+.grid-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+p {
+    color: white;
+    margin: 40px;
+}
+
+
+
+
+
