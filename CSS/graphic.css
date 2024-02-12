@@ -8,3 +8,10 @@
 header {
     color: rgb(0, 0, 0);
 }
+
+#graphic-img {
+    width: 1200px;
+    margin-top: -200px;
+    margin-left: -50px;
+    
+}
