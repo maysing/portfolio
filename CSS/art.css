@@ -48,8 +48,8 @@ header {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
+    grid-template-rows: auto auto auto auto auto auto;
+
     position: relative;
     z-index: 3;
     
@@ -62,36 +62,46 @@ header {
 }
 
 
-
 .grid-item img {
     width: 400px;
+    margin-bottom: 1.5em;
 }
 
+
+.grid-item img:hover {
+    opacity: 70%;
+}
 
 #description-text {
     position: absolute;
     color: rgb(0, 0, 0);
     z-index: 5;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 30em;
-    margin-top: -20em;
-    margin-left: 20em;
-    text-align: left;
+    width: 37em;
+    margin-top: -30.5em;
+    margin-left: 52em;
+    text-align: right;
+}
+
+#description-text p {
+    font-size: 2.7em;
 }
 
 #art-text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40rem;
-    color: #ffffff;
+    color: #000000;
     z-index: 4;
     position: absolute;
     margin-top: -750px;
     font-weight: bold;
-    opacity: 40%;
+    opacity: 20%;
 }
 
 #drwnout-link {
     color: yellow;
+    font-size: 7em;
+    text-decoration: none;    
 }
 
 .instagram-media {
@@ -100,4 +110,9 @@ header {
 
 header {
     z-index: 6;
+}
+
+footer {
+    background: linear-gradient(to bottom, rgba(0, 0, 255, 0), rgb(0, 0, 0));
+    opacity: 70%;
 }

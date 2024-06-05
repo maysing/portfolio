@@ -1,17 +1,95 @@
-#boule-img {
-    width: 600px;
-    margin: 100px;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(255, 220, 220), rgb(85, 166, 210), rgb(255, 255, 255));
+  overflow-x: hidden;
+}
+.container {
+  position: relative;
+  height: 1200px; /* Adjusted height for scrolling */
+  overflow: hidden;
+}
+
+.boule-img {
+  width: 80em; /* Adjusted size for better visibility */
+  height: auto;
+  border-radius: 50%;
+  position: absolute;
+  top: 5em; /* Adjusted for better initial position */
+  left: calc(100% - 80px); /* Adjust initial position */
+  transform: translateX(-50%);
+  transition: left 0.3s ease-out, opacity 0.3s ease-out; /* Add transition for smooth movement and opacity */
+}
+
+header .logo {
+  color: black;
+}
+
+#graphic-text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 10rem;
+  font-weight: bold;
+  margin-left: 0.2em;
+  opacity: 100%;
+  color: white;
+}
+
+#line1, #line2, #line3 {
+  border-top: 1.1em solid rgb(255, 255, 255);
+  margin-left: 0.2em;
+  margin-top: 2em;
+}
+
+#line1 {
+  width: 50em;
+}
+
+#line2 {
+  width: 30em;
+  margin-top: 3em;
+}
+
+#line3 {
+  border-top-color: rgb(70, 70, 151);
+  width: 40em;
+  margin-top: 3em;
+}
+
+#boule-text {
+  margin-top: 25em;
+  margin-left: 6em;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 25em;
+  opacity: 0;
+  transition: opacity 0.5s ease-out; /* Smooth opacity transition */
+}
+
+.subhead {
+  color: rgb(70, 70, 151);
+}
+
+#container-oset {
+  margin-top: -200px;
 }
 
 
-
-header {
-    color: rgb(0, 0, 0);
+#oset-text {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  margin-left: 480px;
+  width: 400px;
+  margin-bottom: -200px;
 }
 
-#graphic-img {
-    width: 1200px;
-    margin-top: -200px;
-    margin-left: -50px;
-    
+#oset-logo {
+  width: 300px;
+  margin-left: 80px;
+}
+
+footer {
+  margin-top: 2000px;
 }

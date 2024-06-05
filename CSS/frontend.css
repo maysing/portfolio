@@ -1,76 +1,100 @@
 * {
-    background-color: black;
-}
-
-header {
-    color: white;
-    border-bottom: 2px solid rgb(160, 1, 150);
-}
-
-.logo {
-    color: #ffffff;
-
+  background-color: black;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-    margin: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
+  color: #ffffff;
+  justify-content: left;
+  margin-left: 120px;
+  margin-top: 140px;
+  font-size: 10rem;
+}
+
+hr {
+    color: rgb(160, 1, 150);
+    size: 7px;
+}
+
+header {
+  color: white;
+  border-bottom: 7px solid rgb(160, 1, 150);
+}
+
+.logo {
+  color: #ffffff;
 }
 
 .sections a {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-#game-video {
-    width: 40%;
-    margin: 40px;
+video {
+    margin-right: 600px;
 }
 
-/* .grid {
-    display: grid;
-    grid-template-columns: 50% 50%;    
-    grid-template-areas:
-    "intro intro2"
-    "sidebar content"
-    "footer footer"
-    "extra extra"
-    ;
+.right-text-section {
+padding-left: 120px;
+width: 67%;
+margin-top: 100px;
 }
 
-.intro {
-    grid-area: intro;
-    height: fit-content;
-    background-color: aqua;
+.right-text-section a {
+  color: rgb(255, 183, 0);
+  margin-left: 1em;
 }
 
-.intro2 {
-    grid-area: intro2;
-    height: fit-content;
-    background-color: blueviolet;
-} */
+.right-subhead {
+  color: rgb(160, 1, 150);
+  margin-bottom: 2em;
+}
+
+.left-text-section {
+  width: 60%;
+  margin-left: 120px;
+}
+
+.left-text-section a {
+  color: rgb(255, 183, 0);
+  margin-left: 1em;
+}
+
+.links {
+  margin-top: 1em;
+}
+
+.left-subhead {
+  margin-bottom: 1em;
+  color: rgb(98, 0, 255);
+}
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto; /* Two columns of equal width */
-    grid-template-rows: auto auto auto; /* Three rows of equal height */
-    gap: 10px; /* Gap between grid items */
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
 }
 
 .grid-item {
-    padding: 20px;
-    border: 1px solid #ccc;
+  margin-top: 100px;
+  width: fit-content;
+  padding-bottom: 100px;
 }
 
-p {
-    color: white;
-    margin: 40px;
+#game-video {
+  width: 80%;
+  margin-left: 20px;
 }
 
+#jb-desktop {
+  width: 80%;
+  padding-left: 10em;
+  margin-right: -430px;
+}
 
-
-
-
+#jb-mobile {
+  width: 32%;
+  margin-bottom: -50px;
+}
