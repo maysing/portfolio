@@ -4,24 +4,35 @@
 }
 
 body {
-  background: linear-gradient(to bottom, rgb(255, 220, 220), rgb(85, 166, 210), rgb(255, 255, 255));
+  background: linear-gradient(
+    to bottom,
+    rgb(85, 166, 210),
+    #c5d1ff,
+    rgb(0, 0, 0),
+    rgb(255, 101, 101)
+  );
+
   overflow-x: hidden;
 }
 .container {
   position: relative;
-  height: 1200px; /* Adjusted height for scrolling */
+  height: 1200px;
   overflow: hidden;
 }
 
 .boule-img {
-  width: 80em; /* Adjusted size for better visibility */
+  width: 80em;
   height: auto;
   border-radius: 50%;
   position: absolute;
-  top: 5em; /* Adjusted for better initial position */
-  left: calc(100% - 80px); /* Adjust initial position */
+  top: 5em;
+  left: calc(100% - 80px);
   transform: translateX(-50%);
-  transition: left 0.3s ease-out, opacity 0.3s ease-out; /* Add transition for smooth movement and opacity */
+  transition: left 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.sections a.active {
+  color: rgb(255, 255, 255);
 }
 
 header .logo {
@@ -29,7 +40,8 @@ header .logo {
 }
 
 #graphic-text {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 10rem;
   font-weight: bold;
   margin-left: 0.2em;
@@ -37,7 +49,9 @@ header .logo {
   color: white;
 }
 
-#line1, #line2, #line3 {
+#line1,
+#line2,
+#line3 {
   border-top: 1.1em solid rgb(255, 255, 255);
   margin-left: 0.2em;
   margin-top: 2em;
@@ -62,10 +76,11 @@ header .logo {
   margin-top: 25em;
   margin-left: 6em;
   color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   width: 25em;
   opacity: 0;
-  transition: opacity 0.5s ease-out; /* Smooth opacity transition */
+  transition: opacity 0.5s ease-out;
 }
 
 .subhead {
@@ -76,9 +91,9 @@ header .logo {
   margin-top: -200px;
 }
 
-
 #oset-text {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: white;
   margin-left: 480px;
   width: 400px;
@@ -90,6 +105,24 @@ header .logo {
   margin-left: 80px;
 }
 
+#oset-images {
+  margin-top: -600px;
+  display: flex;
+  justify-content: center;
+}
+
+#oset-style {
+  width: 91.5%;
+  margin-left: 64px;
+  margin-top: 20px;
+}
+
+#oset-post-img {
+  width: 662px;
+  margin-left: 20px;
+}
+
 footer {
-  margin-top: 2000px;
+  margin-top: 500px;
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 0), rgb(70, 70, 151));
 }

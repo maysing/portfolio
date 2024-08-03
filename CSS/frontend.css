@@ -14,8 +14,8 @@ h1 {
 }
 
 hr {
-    color: rgb(160, 1, 150);
-    size: 7px;
+  color: rgb(160, 1, 150);
+  size: 7px;
 }
 
 header {
@@ -32,13 +32,13 @@ header {
 }
 
 video {
-    margin-right: 600px;
+  margin-right: 600px;
 }
 
 .right-text-section {
-padding-left: 120px;
-width: 67%;
-margin-top: 100px;
+  padding-left: 120px;
+  width: 67%;
+  margin-top: 1em;
 }
 
 .right-text-section a {
@@ -74,13 +74,14 @@ margin-top: 100px;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
-  gap: 10px;
+  gap: 20px;
 }
 
 .grid-item {
-  margin-top: 100px;
+  margin-top: 115px;
   width: fit-content;
-  padding-bottom: 100px;
+  height: fit-content;
+  overflow: hidden;
 }
 
 #game-video {
@@ -88,13 +89,26 @@ margin-top: 100px;
   margin-left: 20px;
 }
 
-#jb-desktop {
-  width: 80%;
-  padding-left: 10em;
-  margin-right: -430px;
+#jb-pictures {
+  overflow: hidden;
+  height: auto;
 }
 
-#jb-mobile {
+#jb-desktop {
+  width: 90%;
+  margin-left: 5em;
+}
+
+/* #jb-mobile {
   width: 32%;
-  margin-bottom: -50px;
+  margin-left: 12em;
+} */
+
+#petson-img {
+  width: 90%;
+}
+
+footer {
+  margin-top: 200px;
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 0), rgb(255, 183, 0));
 }

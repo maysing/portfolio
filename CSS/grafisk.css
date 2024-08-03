@@ -1,0 +1,36 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.grid-item :hover {
+    opacity: 50%;
+}
+
+#thrifty {
+    background-color: rgb(255, 59, 82);
+}
+
+
+
+
+
+
+
+
+
+
+
+
