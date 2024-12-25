@@ -1,9 +1,9 @@
-const bouleImg = document.querySelector('.boule-img');
-const bouleText = document.querySelector('#boule-text');
-const osetLogoWhite = document.querySelector('#oset-logo-white');
-const osetDark = document.querySelector('#oset-images');
+/* const bouleImg = document.querySelector(".boule-img");
+const bouleText = document.querySelector("#boule-text");
+const osetLogoWhite = document.querySelector("#oset-logo-white");
+const osetDark = document.querySelector("#oset-images");
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   let initialPosition = window.innerWidth - 80;
   let minPosition = 100;
   let scroll500 = 500; // Point at which bouleText reaches full opacity and bouleImg stops moving
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Stop moving bouleImg at 500px scroll
     if (scrollY <= scroll500) {
       newPosition = Math.min(newPosition, initialPosition);
-      bouleImg.style.left = newPosition + 'px';
+      bouleImg.style.left = newPosition + "px";
     }
 
     // Calculate the opacity for bouleText based on scroll position
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Calculate the opacity for bouleImg and bouleText based on scroll position
     if (scrollY > scroll700 && scrollY <= scroll900) {
-      let fadeOutOpacity = 1 - ((scrollY - scroll700) / (scroll900 - scroll700));
+      let fadeOutOpacity = 1 - (scrollY - scroll700) / (scroll900 - scroll700);
       bouleImg.style.opacity = fadeOutOpacity;
       bouleText.style.opacity = fadeOutOpacity;
     } else if (scrollY > scroll900) {
@@ -56,7 +56,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Calculate the opacity for osetDark based on scroll position
     if (scrollY > scroll1300 && scrollY <= scroll1400) {
-      let darkFadeInOpacity = (scrollY - scroll1300) / (scroll1400 - scroll1300);
+      let darkFadeInOpacity =
+        (scrollY - scroll1300) / (scroll1400 - scroll1300);
       osetDark.style.opacity = darkFadeInOpacity;
     } else if (scrollY > scroll1400) {
       osetDark.style.opacity = "1";
@@ -65,6 +66,48 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener("scroll", handleScroll);
   handleScroll();
+}); */
+
+document.addEventListener("DOMContentLoaded", function () {
+  let thrifty = document.getElementById("thrifty");
+
+  thrifty.addEventListener("click", handleClick);
+
+  function handleClick() {
+    window.location.href = "/thrifty.html";
+  }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  let boule = document.getElementById("boule-img");
+
+  boule.addEventListener("click", handleClick);
+  function handleClick() {
+    window.location.href = "/boule.html";
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  let oset = document.getElementById("oset");
+
+  oset.addEventListener("click", handleClick);
+  function handleClick() {
+    window.location.href = "/oset.html";
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.hamburger-menu');
+
+  hamburger.addEventListener('click', () => {
+      menu.classList.toggle('active');
+      hamburger.classList.toggle('active');
+  });
+});
+
+const link = document.querySelector("drwnout-link");
+
+

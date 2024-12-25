@@ -1,56 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
 header {
   position: absolute;
 }
 
 #introduction {
-    color: rgb(255, 255, 255);
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    text-align: center;
-    letter-spacing: 6.5px;
-    font-weight: 800;
-  }
+  color: rgb(255, 255, 255);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  text-align: center;
+  letter-spacing: 6.5px;
+  font-weight: 800;
+  font-size: 1rem;
+}
 
-  .logo {
-    color: rgb(255, 255, 255);
-  }
+.logo {
+  color: rgb(255, 255, 255);
+}
 
+#front-title {
+  color: white;
+  font-size: 100px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sections a {
+  color: yellow;
+}
+
+footer {
+  margin-top: -200px;
+}
+
+.video-container {
+  background-color: black;
+}
+
+#video {
+  position: fixed; /* Fäst videon över hela skärmen */
+  top: 0;
+  left: 0;
+  width: 100%; /* Låter videon anpassa sig efter skärmens bredd */
+  height: 100%; /* Låter videon anpassa sig efter skärmens höjd */
+  opacity: 30%;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
   #front-title {
-    color: white;
-    font-size: 100px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .rubrik {
-    color: blue;
-  }
-  
-  .video-container {
-    background-color: black;
-  }
-  
-  #video {
-    opacity: 30%;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+    font-size: 80px;
   }
 
-  .sections a {
-    color: yellow;
+  #introduction {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 955px) {
+  #front-title {
+    font-size: 55px;
   }
 
-  footer {
-    margin-top: -200px;
+  #introduction {
+    font-size: 1rem;
+    max-width: 400px;
+    top: 57%;
   }
-  
+}
+@media (max-width: 655px) {
+  #front-title {
+    font-size: 33px;
+  }
+
+  #introduction {
+    font-size: 0.8rem;
+    max-width: 200px;
+    top: 57%;
+  }
+}

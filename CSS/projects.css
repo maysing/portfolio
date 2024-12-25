@@ -1,0 +1,44 @@
+h1 {
+    color: black;
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.project-description {
+    margin: 40px;
+}
+
+.project-description p{
+    margin-top: 20px;
+    width: 1000px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.button {
+    text-decoration: none;
+    padding: 5px;
+    background-color: #fa6d62;
+    border-radius: 10%;
+    margin-top: 20px;
+    position: absolute;
+    color: black;
+}
+
+.button:hover {
+    background-color: #f99790;
+}
+
+img {
+    width: 33%;
+}
+
+.project-images {
+    margin-top: 120px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+header {
+    background-color: #D7B7F7;
+}

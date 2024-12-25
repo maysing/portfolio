@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maya Kjellén</title>
@@ -8,33 +8,47 @@
     <link rel="stylesheet" href="CSS/index.css" />
     <script src="js/p5.min.js"></script>
     <script src="js/main.js"></script>
-  </head>
-  <header>
-    <a class="logo" href="index.html">
-      <h2>Maya Kjellén</h2>
-    </a>
-    <div class="sections">
-      <a href="grafisk.html">Grafisk Design</a>
-      <a href="art.html">Konst</a>
-      <a href="photo.html">Foto</a>
-      <a href="frontend.html">Frontend</a>
-      <a href="about.html">Om mig</a>
-      <a href="contact.html">Kontakt</a>
-    </div>
-  </header>
-  <body>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <h2>Maya Kjellén</h2>
+        </a>
+        <div class="sections">
+            <a href="grafisk.html">Grafisk Design</a>
+            <a href="art.html">Konst</a>
+            <a href="photo.html">Foto</a>
+            <a href="frontend.html">Frontend</a>
+            <a href="about.html">Om mig</a>
+        </div>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <nav class="hamburger-menu">
+        <ul>
+            <li><a href="#">Start</a></li>
+            <li><a href="grafisk.html">Grafisk Design</a></li>
+            <li><a href="art.html">Konst</a></li>
+            <li><a href="photo.html">Foto</a></li>
+            <li><a href="frontend.html">Frontend</a></li>
+            <li><a href="about.html">Om mig</a></li>
+        </ul>
+    </nav>
+
     <div class="video-container">
-      <video id="video" autoplay muted loop>
-        <source src="Content/shortfestival.mp4" type="video/mp4" />
-      </video>
-      <h1 id="front-title">Maya Kjellén</h1>
-      <p id="introduction">GRAFISK DESIGN - KONST - FOTO - FRONTEND</p>
+        <video id="video" autoplay muted loop>
+            <source src="Content/shortfestival.mp4" type="video/mp4" />
+        </video>
+        <h1 id="front-title">Maya Kjellén</h1>
+        <p id="introduction">GRAFISK DESIGN - KONST - FOTO - FRONTEND</p>
     </div>
+    
     <footer>
-      <p>
-        Maya Kjellén - 0702480498 <br />
-        maya.kjellen@gmail.com
-      </p>
+        <p>Maya Kjellén - 0702480498 <br />maya.kjellen@gmail.com</p>
     </footer>
-  </body>
+</body>
 </html>

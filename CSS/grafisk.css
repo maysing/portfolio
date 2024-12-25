@@ -1,36 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(7, 1fr);
-    gap: 10px;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  gap: 10px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+  overflow: hidden;
 }
 
 .grid-item :hover {
-    opacity: 50%;
+  opacity: 90%;
+  cursor: pointer;
+}
+
+.black-area {
+  height: 900px;
+  background-color: black;
+  margin-top: -1050px;
 }
 
 #thrifty {
-    background-color: rgb(255, 59, 82);
+  height: 310px;
 }
 
+#boule-img {
+  height: 310px;
+}
 
+.fullwidth-section {
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
 
+}
 
+.sections a.active {
+  color: #4400ff;
+}
 
+#oset {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
 
+.fullwidth-section :hover {
+  opacity: 90%;
+  cursor: pointer;
+}
 
+.logo {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
 
+.sections a {
+  color: rgb(0, 0, 0);
+}
+.sections a.active {
+  color: rgb(0, 0, 0);
+}
 
+.sections a:hover {
+  animation: bounce 0.2s;
+}
 
+#top-section {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
 
+h1 {
+  color: #4400ff;
+  font-size: 10.4em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 20px;
+  margin-bottom: 30px;
+}
 
+.bar {
+  background-color: black;
+}
+
+@media (max-width: 1365px) {
+  h1 {
+    font-size: 8em;
+  }
+}
+
+@media (max-width: 1125px) {
+  h1 {
+    font-size: 6em;
+  }
+}
+
+@media (max-width: 915px) {
+  h1 {
+    font-size: 4em;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .grid-item {
+    padding: 0;
+  }
+}
+
+@media (max-width: 715px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 595px) {
+  h1 {
+    margin-left: 40px;
+  }
+}
