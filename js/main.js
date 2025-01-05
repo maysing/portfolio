@@ -108,6 +108,40 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-const link = document.querySelector("drwnout-link");
+/*slideshow*/
+
+let currentSlide = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll('.slide');
+
+  // Korrigera index utanför gränserna
+  if (index >= slides.length) {
+    currentSlide = 0;
+  } else if (index < 0) {
+    currentSlide = slides.length - 1;
+  } else {
+    currentSlide = index;
+  }
+
+  // Visa endast aktuell slide
+  slides.forEach((slide, i) => {
+    slide.style.display = i === currentSlide ? 'block' : 'none';
+  });
+}
+
+function changeSlide(direction) {
+  showSlide(currentSlide + direction);
+}
+
+// Visa den första bilden som standard
+document.addEventListener('DOMContentLoaded', () => {
+  showSlide(currentSlide);
+});
+
+
+
+
+
 
 

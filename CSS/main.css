@@ -129,6 +129,62 @@ header {
   animation: bounce 0.2s;
 }
 
+/* Slideshow */
+
+.slideshow {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 50%;
+  margin: auto;
+  overflow: hidden;
+  padding: 40px;
+  border-radius: 3%;
+  background-color: white;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(25, 25, 25, 0.5);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 10%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
 @media (max-width: 1000px) {
   .sections {
     display: none;
