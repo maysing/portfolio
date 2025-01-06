@@ -23,8 +23,6 @@ footer p {
   opacity: 100%;
 }
 
-
-
 header {
   height: 100px;
   width: 100%;
@@ -213,5 +211,9 @@ header {
 @media (max-width: 580px) {
   .hamburger {
     margin-right: 20pxpx;
+  }
+
+  .logo {
+    font-size: 10px;
   }
 }
