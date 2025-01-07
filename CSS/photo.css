@@ -144,7 +144,6 @@ h1 {
   justify-self: center;
 }
 
-
 #badminton-section {
   background-color: black;
 }
@@ -160,6 +159,12 @@ h1 {
 #kurs p {
   width: 550px;
 }
+
+#responsive-collage {
+  display: none;
+}
+
+
 
 footer {
   background-color: black;
@@ -179,6 +184,10 @@ footer {
   #jsumt {
     top: -500px;
   }
+
+  .grid-container2 {
+    grid-template-columns: auto;
+  }
 }
 
 @media (max-width: 1040px) {
@@ -187,8 +196,16 @@ footer {
     left: 90px;
   }
 
+  .collage {
+    display: none;
+  }
+  #responsive-collage {
+display: block;
+  }
 
-
+  #responsive-collage img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 899px) {
@@ -198,6 +215,10 @@ footer {
 
   .grid-container {
     grid-template-columns: auto;
+  }
+
+  h3 {
+    margin-top: 20px;
   }
 }
 
@@ -217,6 +238,7 @@ footer {
     width: 80%;
   }
 
+
 }
 
 @media (max-width: 630px) {
@@ -229,13 +251,17 @@ footer {
     right: 10%;
   }
 
-  
   h1 {
     font-size: 16px;
   }
 
   h3 {
-    padding-top: 0px;
+    padding-top: 20px;
+  }
+
+  .grid-container {
+    padding-bottom: 0;
+    margin-bottom: -60px;
   }
 }
 
@@ -252,7 +278,7 @@ footer {
 
 @media (max-width: 430px) {
   #jsumt {
-    top: -250px;
+    top: -240px;
     width: 35%;
   }
 }
