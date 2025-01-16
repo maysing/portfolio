@@ -146,13 +146,13 @@ footer {
   }
 
   .spline {
-    margin-top: 150px;
+    margin-top: 70px;
     margin-bottom: 0px;
   }
 
   .bouncy-button {
     margin-top: 230px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 
   @media (max-width: 500px) {
