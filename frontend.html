@@ -3,92 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend</title>
+    <title>Document</title>
     <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/frontend.css" />
-    <script src="js/p5.min.js"></script>
     <script src="js/main.js"></script>
   </head>
-  <header>
-    <a class="logo" href="index.html">
-      <h2>Maya Kjellén</h2>
-    </a>
-    <div class="sections">
-      <a href="grafisk.html">Grafisk Design</a>
-      <a href="art.html">Konst</a>
-      <a href="photo.html">Foto</a>
-      <a class="active" href="frontend.html">Frontend</a>
-      <a href="about.html">Om mig</a>
-    </div>
-  </header>
   <body>
-    <h1>WEB DESIGN & DEVELOPMENT</h1>
-    <div class="grid-container">
-      <div class="grid-item">
-        <div class="left-text-section">
-          <h2 class="left-subhead">SoulQuest Game</h2>
-          <p>
-            This is a game that me and my classmate Saga Lannerhjelm did in our
-            second year in the course "Foundations of Programming" it is done
-            mainly in javascript, with the package P5.js.
-          </p>
-          <p class="links">
-            The game is available at:<a
-              href="https://ju-nmd2021.github.io/fop-project-project_30/"
-              >https://ju-nmd2021.github.io/fop-project-project_30/</a
-            >
-          </p>
-        </div>
+    <header>
+      <a class="logo" href="index.html">
+        <h2>Maya Kjellén</h2>
+      </a>
+      <div class="sections">
+        <a href="grafisk.html">Grafisk Design</a>
+        <a href="art.html">Konst</a>
+        <a href="photo.html">Foto</a>
+        <a  class="active" href="frontend.html">Frontend</a>
+        <a href="about.html">Om mig</a>
       </div>
-      <div class="grid-item">
-        <video id="game-video" autoplay muted loop>
-          <source src="Content/SoulQuest_trailer.mp4" type="video/mp4" />
-        </video>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
-      <div class="grid-item">
-        <div id="jb-pictures">
-          <img id="jb-desktop" src="Content/jbcenter.png" alt="" />
-          <!-- <img id="jb-mobile" src="Content/jb-mobile.png" alt="" /> -->
-        </div>
-      </div>
-      <div class="grid-item">
-        <div class="right-text-section">
-          <h2 class="right-subhead">JB Center - Website</h2>
-          <p>
-            This is a website I got the chance to design and develop for the
-            company JB Center in 2023/24. This is my first real comissioned web
-            development project and it was really fun and challenging to work
-            on. It is a static website built with HTML, CSS and javascript.
-          </p>
-          <p class="links">
-            The website is live at:<a href="https://jbcenter.se/"
-              >https://jbcenter.se/</a
-            >
-          </p>
-        </div>
-      </div>
-      <div class="grid-item" class="petson-area">
-        <div class="left-text-section">
-          <h2 class="left-subhead">Petson's Rescue</h2>
-          <p>
-            This website was created together with my classmates Hannah Levander
-            and Caroline Frössling in the Course Web and User Interface Design
-            back in 2021. This was our first website ever made and was the final
-            project in the course. It is created only in HTML and CSS.
-          </p>
-          <p class="links">
-            The website is available at:<a
-              href="https://ju-nmd2021.github.io/final-project-project-10/"
-              >https://ju-nmd2021.github.io/final-project-project-10/</a
-            >
-          </p>
-        </div>
-      </div>
-      <div class="grid-item" class="petson-area">
-        <img id="petson-img" src="Content/petson.png" alt="" />
-      </div>
-    </div>
-    <footer></footer>
-  </body>
+    </header>
 
+    <nav class="hamburger-menu">
+      <ul>
+        <li><a href="#">Start</a></li>
+        <li><a href="grafisk.html">Grafisk Design</a></li>
+        <li><a href="art.html">Konst</a></li>
+        <li><a href="photo.html">Foto</a></li>
+        <li><a href="frontend.html">Frontend</a></li>
+        <li><a href="about.html">Om mig</a></li>
+      </ul>
+    </nav>
+
+    <div class="spline">
+      <iframe class="graphic"
+        src="https://my.spline.design/animatedshapeblend-e0f3cd9b7f3530ef9d9a63712a64b7d8/"
+        frameborder="0"
+      ></iframe>
+    </div>
+
+    <div class="dev-project">
+      <h3>Soulquest</h3>
+      <p>
+        This project is a game created by me and Saga Lannerhjelm in the course
+        "Foundations of Programming" at Jönköping University. The game is coded
+        in javascript, using the framework P5.js.
+      </p>
+      <video autoplay muted loop src="Content/SoulQuest_trailer.mp4"></video>
+      <a
+        class="button"
+        href="https://ju-nmd2021.github.io/fop-project-project_30/"
+      >
+        To the Game
+      </a>
+    </div>
+
+    <div class="dev-project-inverted">
+      <h3>JB Center</h3>
+      <p>
+        This is a website that I designed and coded for the company JB Center.
+        The website is made up by HTML, CSS and Javascript and is static with
+        the intention to be informative only. This is my first real commissioned
+        website project and it was really fun to work on:)
+      </p>
+      <img src="Content/jbcenter.png" alt="" />
+      <a
+        class="button"
+        href="https://ju-nmd2021.github.io/fop-project-project_30/"
+      >
+        Visit Website
+      </a>
+    </div>
+
+    <div class="dev-project">
+      <h3>Petson's Rescue</h3>
+      <p>
+        Petson's Rescue is a school project in our first coding class "Web and
+        User Interface Design". On this project I worked with my friends Hannah
+        Levander and Caroline Frössling and it's coded in HTML and CSS only.
+      </p>
+      <img src="Content/petson.png" alt="" />
+      <a
+        class="button"
+        href="https://ju-nmd2021.github.io/fop-project-project_30/"
+      >
+        See Project
+      </a>
+    </div>
+
+    <div class="dev-project-inverted">
+      <h3>Assignment in Express & Node.js</h3>
+      <p>
+        This assigment was the final submission in the course "Web Development
+        Fundamentals" which I struggled with a bit. Although after finishing my
+        studies, I have a better understanding on how it could be improved. The
+        website was up and running on Amazon Lightsail for the submission, but
+        is now taken down. To see the project files, please go to my github
+        page!
+      </p>
+      <img src="Content/node.png" alt="" />
+      <a
+        class="button"
+        href="https://github.com/maysing/mayaKjellenPortfolio"
+      >
+        To Github Page
+      </a>
+    </div>
+  </body>
+  <footer></footer>
 </html>

@@ -80,6 +80,11 @@ header {
   color: rgb(160, 1, 150);
 }
 
+.button:hover {
+  animation: bounce 0.2s;
+}
+
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -148,6 +153,7 @@ header {
   border-radius: 3%;
   background-color: white;
 }
+
 
 .slide {
   display: none;
