@@ -140,14 +140,27 @@ footer {
   }
 
   .spline {
-    margin-top: 200px;
-    margin-bottom: 400px;
+    margin-top: 150px;
+    margin-bottom: 0px;
   }
-}
 
-@media (max-width: 500px) {
-  .graphic {
-    width: 300px;
-    height: 300px;
+  .bouncy-button {
+    margin-top: 230px;
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 500px) {
+    .graphic {
+      width: 300px;
+      height: 300px;
+    }
+
+    .dev-project {
+      height: 1000px;
+    }
+
+    .dev-project-inverted {
+      height: 1000px;
+    }
   }
 }

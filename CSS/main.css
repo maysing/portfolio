@@ -188,6 +188,44 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Bouncy Button */
+
+
+.bouncy-button {
+  width: 60px;
+  height: 60px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
+              0 0 15px rgba(0, 123, 255, 0.6),
+              0 0 30px rgba(0, 123, 255, 0.4);
+  animation: bounce 1.5s infinite, glow 1.5s infinite alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  margin-top: 20px;
+  
+}
+
+.bouncy-button:hover {
+  background-color: #0056b3;
+}
+
+/* Animation för studs */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
 
 @media (max-width: 1000px) {
   .sections {
