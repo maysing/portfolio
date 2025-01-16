@@ -8,6 +8,7 @@
   background-color: black;
 }
 
+
 .sections a.active {
   color: blue;
 }
@@ -16,12 +17,17 @@
   display: flex;
   justify-self: center;
   margin-top: -50px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .graphic {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
+}
+
+.bouncy-button {
+  margin-top: 0;
+  margin-bottom: 100px;
 }
 
 .dev-project {
@@ -32,7 +38,7 @@
   align-items: center;
   background-color: black;
   color: white;
-  padding-top: 150px;
+  padding-top: 60px;
   padding-bottom: 150px;
 }
 
@@ -44,7 +50,7 @@
   align-items: center;
   background-color: rgb(255, 255, 255);
   color: black;
-  padding-top: 150px;
+  padding-top: 60px;
   padding-bottom: 150px;
 }
 
