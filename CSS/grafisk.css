@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  background-color: black;
 }
 
 .grid-container {
@@ -13,6 +14,9 @@
   margin-bottom: 80px;
 }
 
+#top-section img {
+  width: 20%;
+}
 .grid-item {
   display: flex;
   justify-content: center;
@@ -49,7 +53,12 @@
 }
 
 .sections a.active {
-  color: #4400ff;
+  color: #de2e22;
+}
+
+#rityta {
+  width: 100%;
+  height: 90%;
 }
 
 #oset {
@@ -65,11 +74,11 @@
 
 .logo {
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .sections a {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .sections a.active {
   color: rgb(0, 0, 0);
@@ -79,58 +88,78 @@
   animation: bounce 0.2s;
 }
 
-#top-section {
-  margin: 20px;
-  display: flex;
-  justify-content: center;
+#bounceButton {
+  margin-bottom: 100px;
 }
 
+#target {
+  height: 100px;
+}
+
+
 h1 {
+  margin-top: 200px;
   color: #4400ff;
-  font-size: 10.4em;
+  font-size: 3.8rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  letter-spacing: 20px;
-  margin-bottom: 30px;
+  justify-self: center;
+  text-align: center;
+}
+
+.bouncy-button {
+
+  background-color: blue;
+
+}
+
+.bouncy-button:hover {
+  background-color: #006eff;
+}
+
+#icons {
+  width: 465px;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 100px;
 }
 
 .bar {
   background-color: black;
 }
 
+h4 {
+  color: blue;
+
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+
+p {
+  color: white;
+  width: 500px;
+  justify-self: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 @media (max-width: 1365px) {
-  h1 {
-    font-size: 8em;
-  }
+
 }
 
 @media (max-width: 1125px) {
-  h1 {
-    font-size: 6em;
-  }
+
 }
 
 @media (max-width: 915px) {
-  h1 {
-    font-size: 4em;
-  }
-  .grid-container {
-    grid-template-columns: 1fr;
-    gap: 5px;
-  }
 
-  .grid-item {
-    padding: 0;
-  }
 }
 
 @media (max-width: 715px) {
-  h1 {
-    font-size: 3em;
-  }
+
 }
 
 @media (max-width: 595px) {
-  h1 {
-    margin-left: 40px;
-  }
+
 }
