@@ -93,6 +93,10 @@ header {
   cursor: pointer;
 }
 
+#brandperior {
+  background-color: black;
+}
+
 .bar {
   width: 35px;
   height: 4px;
@@ -130,6 +134,24 @@ header {
 
 .hamburger-menu ul li a:hover {
   animation: bounce 0.2s;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: orange;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0 1em 1em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  margin-top: 15px;
+}
+
+.button:hover {
+  background-color: yellow;
 }
 
 /* Slideshow */
