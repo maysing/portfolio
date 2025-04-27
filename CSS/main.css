@@ -78,6 +78,7 @@ header {
 
 .sections a.active {
   color: rgb(160, 1, 150);
+  font-weight: bold;
 }
 
 .button:hover {

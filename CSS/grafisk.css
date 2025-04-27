@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(123, 180, 255);
 }
 
 .grid-container {
@@ -29,11 +29,6 @@ body {
   overflow: hidden;
 }
 
-.grid-item :hover {
-  opacity: 90%;
-  cursor: pointer;
-}
-
 .black-area {
   height: 900px;
   background-color: black;
@@ -52,10 +47,6 @@ body {
   width: 100%;
   height: auto;
   margin-bottom: 80px;
-}
-
-.sections a.active {
-  color: #ffffff;
 }
 
 #rityta {
@@ -83,7 +74,7 @@ body {
   color: rgb(255, 255, 255);
 }
 .sections a.active {
-  color: rgb(0, 0, 0);
+  color: blue;
 }
 
 .sections a:hover {
@@ -92,6 +83,8 @@ body {
 
 #bounceButton {
   margin-bottom: 100px;
+
+  margin-top: 100px;
 }
 
 #target {
@@ -102,8 +95,8 @@ h1 {
   margin-top: 200px;
   color: #4400ff;
   font-size: 3.8rem;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  justify-self: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
 
@@ -126,33 +119,45 @@ h1 {
   background-color: black;
 }
 
-h4 {
-  color: blue;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  letter-spacing: 2px;
-  margin: 20px;
-  font-size: 4rem;
-  justify-self: center;
-}
-
-h5 {
+#target {
   justify-self: center;
   font-size: 22px;
-  margin-bottom: 20px;
+  padding-top: 100px;
 }
+
 
 p {
   width: 500px;
   justify-self: center;
   text-align: center;
   margin-bottom: 40px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
+.light p {
+  color: #000000;
+  margin-top: -40px;
+  margin-bottom: 60px;
+}
 
 #boule-text {
   padding-top: 200px;
-  height: 200px;
+  height: 300px;
 }
+
+#boule-text h5 {
+  color: #000000;
+  font-size: 30px;
+}
+
+#boule-text p 
+{
+  margin-top: 20px;
+}
+
 
 .light {
   background-color: white;
@@ -161,17 +166,14 @@ p {
   box-sizing: border-box;
 }
 
-.button {
-  margin-bottom: 20px;
-  justify-self: center;
+footer {
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 0), blue);
+  margin-top: 200px;
 }
 
-#brandperior h4 {
-  color: #F47422;
-}
+footer p {
+  color: white;
 
-#brandperior p {
-  color: #ffffff;
 }
 
 @media (max-width: 1365px) {
