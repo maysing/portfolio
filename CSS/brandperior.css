@@ -1,197 +1,383 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    background-color: rgb(0, 0, 0);
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 90%;
-    gap: 10px;
-    padding: 0;
-    margin: 0 auto;
-    margin-bottom: 80px;
-  }
-  
-  #top-section img {
-    width: 20%;
-  }
-  .grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: fit-content;
-    overflow: hidden;
-  }
-  
-  .black-area {
-    height: 900px;
-    background-color: black;
-    margin-top: -1050px;
-  }
-  
-  #thrifty {
-    height: 310px;
-  }
-  
-  #boule-img {
-    height: 310px;
-  }
-  
-  .fullwidth-section {
-    width: 100%;
-    height: auto;
-    margin-bottom: 80px;
-  }
-  
-  #rityta {
-    width: 100%;
-    height: 90%;
-  }
-  
-  #oset {
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-  }
-  
-  .fullwidth-section :hover {
-    opacity: 90%;
-    cursor: pointer;
-  }
-  
-  .logo {
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-  }
-  
-  .sections a {
-    color: rgb(255, 255, 255);
-  }
-  .sections a.active {
-    color: #F47422;;
-  }
-  
-  .sections a:hover {
-    animation: bounce 0.2s;
-  }
-  
-  #bounceButton {
-    margin-bottom: 100px;
-  
-    margin-top: 100px;
-  }
-  
-  #target {
-    height: 100px;
-  }
-  
-  h1 {
-    margin-top: 200px;
-    color: #F47422;
-    font-size: 3.8rem;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-align: center;
-  }
-  
-  .bouncy-button {
-    background-color: #F47422;;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
-    0 0 15px rgba(255, 0, 0, 0.6),
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  gap: 10px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+#top-section img {
+  width: 20%;
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.black-area {
+  height: 900px;
+  background-color: black;
+  margin-top: -1050px;
+}
+
+#thrifty {
+  height: 310px;
+}
+
+#boule-img {
+  height: 310px;
+}
+
+.fullwidth-section {
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+}
+
+#rityta {
+  width: 100%;
+  height: 90%;
+}
+
+#oset {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+
+
+.fullwidth-section :hover {
+  opacity: 90%;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.sections a {
+  color: rgb(255, 255, 255);
+}
+.sections a.active {
+  color: #f47422;
+}
+
+.sections a:hover {
+  animation: bounce 0.2s;
+}
+
+#bounceButton {
+  margin-bottom: 100px;
+
+  margin-top: 100px;
+}
+
+#target {
+  height: 100px;
+}
+
+h1 {
+  margin-top: 200px;
+  color: #f47422;
+  font-size: 3.8rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+.bouncy-button {
+  background-color: #f47422;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 0, 0, 0.6),
     0 0 30px rgba(255, 145, 0, 0.4);
-    color: black;
+  color: black;
+}
+
+.bouncy-button:hover {
+  background-color: #f08c4d;
+}
+
+#icons {
+  width: 465px;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 100px;
+}
+
+.bar {
+  background-color: black;
+}
+
+#target {
+  justify-self: center;
+  font-size: 22px;
+  padding-top: 100px;
+}
+
+p {
+  width: 500px;
+  justify-self: center;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.light p {
+  color: #000000;
+  margin-top: -40px;
+  margin-bottom: 60px;
+}
+
+#boule-text {
+  padding-top: 200px;
+  height: 300px;
+}
+
+#boule-text h5 {
+  color: #000000;
+  font-size: 30px;
+}
+
+#boule-text p {
+  margin-top: 20px;
+}
+
+.light {
+  background-color: white;
+  overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 0), blue);
+  margin-top: 200px;
+}
+
+footer p {
+  color: white;
+}
+
+.eskils img {
+  height: 500px; /* Match the video height */
+  width: auto; /* Allow width to adjust proportionally */
+  object-fit: cover; /* Maintain proportions */
+}
+
+.eskils {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#video {
+  height: 500px;
+}
+
+#webs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#richly {
+  margin-top: 10px;
+
+}
+
+#lillsjön {
+  width: 600px;
+  padding-top: 150px;
+  padding-left: 40px;
+}
+
+#webs {
+  margin-top: -60px;
+}
+
+
+
+footer {
+  background: linear-gradient(to bottom, rgba(255, 115, 0, 0), rgb(255, 102, 0));
+  opacity: 70%;
+  bottom: 0; 
+  width: 100%;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.brandperior {
+  background-color: black;
+  display: flex; 
+  justify-content: center;
+  padding: 100px;
+
+}
+
+#brandperior-logo {
+  width: 300px;
+}
+
+.brandperior-area {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* Adjust grid to fit larger items */
+}
+
+.brandperior-area2 {
+  margin-top: 100px;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* Adjust grid to fit larger items */
+}
+
+#strategy {
+  height: 500px;
+}
+
+#design {
+  height: 280px;
+  margin-top: 100px;
+ margin-right: 100px;
+}
+
+.brandperior-area p {
+  color: rgb(88, 88, 88);
+  font-size: 20px;
+  text-align: right;
+  margin-top: -150px;
+  margin-left: 100px;
+
+}
+
+#flaska {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+#exist {
+  height: 380px;
+  width: 380px;
+  object-fit: cover; 
+  padding-top: 30px; 
+}
+
+.brandperior-area2 .grid-item {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#diagram {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+#webb {
+  height: 700px;
+  width: 700px;
+  object-fit: cover;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+#space {
+  height: 200px;
+}
+
+
+
+@media (max-width: 1365px) {
+
+  #eskils img {
+    height: 300px; /* Adjusted height for smaller screens */
+    width: auto; /* Maintain aspect ratio */
   }
-  
-  .bouncy-button:hover {
-    background-color: #f08c4d;;
+
+  #boule {
+    margin-top: 50px;
+    width: 400px;
   }
-  
-  #icons {
-    width: 465px;
-    display: flex;
-    justify-self: center;
-    margin-bottom: 100px;
-  }
-  
-  .bar {
-    background-color: black;
-  }
-  
-  #target {
-    justify-self: center;
-    font-size: 22px;
-    padding-top: 100px;
-  }
-  
-  
-  p {
-    width: 500px;
-    justify-self: center;
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  
-  .light p {
-    color: #000000;
-    margin-top: -40px;
-    margin-bottom: 60px;
-  }
-  
+
   #boule-text {
-    padding-top: 200px;
+    padding-top: 100px;
     height: 300px;
   }
-  
+}
+
+@media (max-width: 1125px) {
+  #boule {
+    margin-top: 50px;
+    width: 400px;
+  }
+
+  #boule-text {
+    padding-top: 100px;
+    height: 300px;
+  }
+
   #boule-text h5 {
     color: #000000;
-    font-size: 30px;
+    font-size: 20px;
   }
-  
-  #boule-text p 
-  {
-    margin-top: 20px;
+
+  #boule-text p {
+    width: 300px;
   }
-  
-  
-  .light {
-    background-color: white;
-    overflow: hidden;
-    max-width: 100%;
-    box-sizing: border-box;
+
+  p {
+    font-size: 18px;
   }
-  
-  footer {
-    background: linear-gradient(to bottom, rgba(0, 0, 255, 0), blue);
-    margin-top: 200px;
+ 
+  h1 {
+    font-size: 2rem;
   }
-  
-  footer p {
-    color: white;
-  
+
+}
+
+@media (max-width: 815px) {
+  .grid-container {
+    grid-template-columns: 1fr;
   }
-  
-  @media (max-width: 1365px) {
+
+  h1 {
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  
-  @media (max-width: 1125px) {
+}
+
+@media (max-width: 595px) {
+
+  p {
+    width: 200px;
+    font-size: 14px;
   }
-  
-  @media (max-width: 915px) {
+
+  h1 {
+    font-size: 1.5rem;
   }
-  
-  @media (max-width: 715px) {
-  }
-  
-  @media (max-width: 595px) {
-  }
-  
+}

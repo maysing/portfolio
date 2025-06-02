@@ -125,7 +125,6 @@ h1 {
   padding-top: 100px;
 }
 
-
 p {
   width: 500px;
   justify-self: center;
@@ -153,11 +152,9 @@ p {
   font-size: 30px;
 }
 
-#boule-text p 
-{
+#boule-text p {
   margin-top: 20px;
 }
-
 
 .light {
   background-color: white;
@@ -173,20 +170,63 @@ footer {
 
 footer p {
   color: white;
-
 }
 
 @media (max-width: 1365px) {
+  #boule {
+    margin-top: 50px;
+    width: 400px;
+  }
+
+  #boule-text {
+    padding-top: 100px;
+    height: 300px;
+  }
 }
 
 @media (max-width: 1125px) {
+  #boule {
+    margin-top: 50px;
+    width: 400px;
+  }
+
+  #boule-text {
+    padding-top: 100px;
+    height: 300px;
+  }
+
+  #boule-text h5 {
+    color: #000000;
+    font-size: 20px;
+  }
+
+  #boule-text p {
+    width: 300px;
+  }
+
+  p {
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 915px) {
-}
+@media (max-width: 815px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 
-@media (max-width: 715px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 595px) {
+
+  p {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
