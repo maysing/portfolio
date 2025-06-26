@@ -60,8 +60,6 @@ body {
   margin-top: 10px;
 }
 
-
-
 .fullwidth-section :hover {
   opacity: 90%;
   cursor: pointer;
@@ -120,10 +118,6 @@ h1 {
   margin-bottom: 100px;
 }
 
-.bar {
-  background-color: black;
-}
-
 #target {
   justify-self: center;
   font-size: 22px;
@@ -178,9 +172,9 @@ footer p {
 }
 
 .eskils img {
-  height: 500px; /* Match the video height */
-  width: auto; /* Allow width to adjust proportionally */
-  object-fit: cover; /* Maintain proportions */
+
+  height: auto;
+  width: auto;
 }
 
 .eskils {
@@ -193,7 +187,7 @@ footer p {
 }
 
 #video {
-  height: 500px;
+  height: 740px;
 }
 
 #webs {
@@ -254,6 +248,13 @@ footer {
   grid-template-columns: repeat(3, auto); /* Adjust grid to fit larger items */
 }
 
+.brandperior-area .grid-item img,
+.brandperior-area .grid-item video {
+  width: 100%; /* Scale down to fit the container */
+  max-width: 700px; /* Maintain a maximum width */
+  height: auto; /* Preserve aspect ratio */
+}
+
 #strategy {
   height: 500px;
 }
@@ -309,13 +310,19 @@ footer {
   height: 200px;
 }
 
+.hamburger .bar {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
 
 
 @media (max-width: 1365px) {
 
   #eskils img {
-    height: 300px; /* Adjusted height for smaller screens */
-    width: auto; /* Maintain aspect ratio */
+    height: 300px;
+    width: auto;
   }
 
   #boule {
@@ -326,6 +333,11 @@ footer {
   #boule-text {
     padding-top: 100px;
     height: 300px;
+  }
+
+  .brandperior-area {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -357,6 +369,13 @@ footer {
     font-size: 2rem;
   }
 
+}
+
+@media (max-width: 1000px) {
+  .brandperior-area .grid-item img,
+  .brandperior-area .grid-item video {
+    max-width: 500px;
+  }
 }
 
 @media (max-width: 815px) {
