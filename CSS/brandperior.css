@@ -178,9 +178,10 @@ footer p {
 }
 
 .eskils {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
+  margin-left: 10%;
   align-items: center;
   flex-direction: row;
   gap: 10px;
@@ -236,9 +237,11 @@ footer {
 }
 
 .brandperior-area {
-  background-color: black;
-  display: grid;
-  grid-template-columns: repeat(3, auto); /* Adjust grid to fit larger items */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+  overflow: hidden; /* Prevent scrolling */
+  gap: 20px; /* Add spacing between videos */
 }
 
 .brandperior-area2 {
@@ -248,6 +251,11 @@ footer {
   grid-template-columns: repeat(3, auto); /* Adjust grid to fit larger items */
 }
 
+.brandperior-area .grid-item {
+  width: 100%; /* Ensure videos take full width */
+  max-width: 600px; /* Optional: Limit video width */
+}
+
 .brandperior-area .grid-item img,
 .brandperior-area .grid-item video {
   width: 100%; /* Scale down to fit the container */
@@ -255,14 +263,23 @@ footer {
   height: auto; /* Preserve aspect ratio */
 }
 
+
+#webb {
+  height: 200px;
+}
+
 #strategy {
   height: 500px;
+  position: relative;
+  margin-left: 60px; /* Adjust as needed */
 }
 
 #design {
-  height: 280px;
-  margin-top: 100px;
- margin-right: 100px;
+  height: 700px;
+  margin-top: 80px;
+  margin-right: 100px;
+  position: relative;
+  margin-left: 40px; /* Adjust as needed */
 }
 
 .brandperior-area p {
@@ -303,7 +320,8 @@ footer {
   width: 700px;
   object-fit: cover;
   margin-top: -100px;
-  margin-left: -100px;
+  margin-left: 20px; /* Adjust as needed */
+  position: relative;
 }
 
 #space {
@@ -315,8 +333,27 @@ footer {
 }
 
 
+.eskils-responsive {
+  display: none;
+  width: 80%;
+  justify-content: center;
+  justify-self: center;
+  margin-left: 15%;
+}
 
+.eskils-responsive img {
+  width: 80%;
+  padding-bottom: 30px;
+}
 
+.eskils-responsive video {
+  width: 80%;
+  padding-bottom: 30px;
+}
+
+#webs-mobile {
+  display: none;
+}
 
 @media (max-width: 1365px) {
 
@@ -335,10 +372,34 @@ footer {
     height: 300px;
   }
 
+  .eskils {
+    margin-top: -100px;
+  }
+
+  #lillsjön {
+    margin-right: 30px;
+    margin-top: -30px;
+  }
+
   .brandperior-area {
     display: flex;
     flex-direction: column;
   }
+
+  .brandperior-area2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #webb {
+    margin-left: 20px;
+  }
+
+  #design {
+    margin-left: 100px;
+    margin-top: -70px;
+  }
+
 }
 
 @media (max-width: 1125px) {
@@ -369,6 +430,10 @@ footer {
     font-size: 2rem;
   }
 
+  #richly {
+    margin-top: -200px;
+  }
+
 }
 
 @media (max-width: 1000px) {
@@ -376,16 +441,42 @@ footer {
   .brandperior-area .grid-item video {
     max-width: 500px;
   }
-}
 
-@media (max-width: 815px) {
+  .eskils {
+    margin-top: -200px;
+  }
+
   .grid-container {
     grid-template-columns: 1fr;
   }
+}
+
+
+
+@media (max-width: 815px) {
 
   h1 {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .eskils {
+    display: none;
+  }
+
+  .eskils-responsive {
+    display: block;
+  }
+
+  #webs-mobile {
+    display: flex;
+    width: 100%;
+    justify-self: center;
+
+  }
+
+  #webs {
+    display: none;
   }
 }
 
@@ -398,5 +489,23 @@ footer {
 
   h1 {
     font-size: 1.5rem;
+  }
+
+  #lillsjön {
+    margin-top: -200px;
+  }
+}
+
+@media (min-width: 1126px) {
+  .brandperior-area {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Add spacing between items */
+  }
+
+  .brandperior-area .grid-item {
+    flex: 1; /* Ensure equal spacing for items */
+    max-width: 300px; /* Optional: Limit item width */
   }
 }
