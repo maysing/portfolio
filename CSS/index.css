@@ -100,3 +100,15 @@ footer {
     top: 57%;
   }
 }
+
+@media (max-width: 400px) {
+  #front-title {
+    font-size: 26px;
+  }
+
+  #introduction {
+    font-size: 0.3rem;
+    max-width: 200px;
+    top: 55%;
+  }
+}
