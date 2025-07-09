@@ -122,6 +122,16 @@ header {
   z-index: 9999;
 }
 
+h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+h5 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
 .hamburger-menu ul {
   list-style-type: none;
   margin-left: 8%;

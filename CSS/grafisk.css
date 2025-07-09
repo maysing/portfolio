@@ -29,6 +29,11 @@ body {
   overflow: hidden;
 }
 
+h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
 .black-area {
   height: 900px;
   background-color: black;
