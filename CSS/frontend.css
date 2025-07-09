@@ -113,8 +113,13 @@ img {
 }
 
 footer {
-  opacity: 50%;
+  opacity: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 255, 0), rgb(0, 119, 255));
+  background-color: black;
+}
+
+footer p {
+  color: black;
 }
 
 @media (max-width: 1000px) {

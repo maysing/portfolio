@@ -53,6 +53,13 @@ document.addEventListener('DOMContentLoaded', function () {
     showSlide(currentSlide + direction);
   }
 
+  document.getElementById('prevSlide')?.addEventListener('click', function() {
+  changeSlide(-1);
+});
+document.getElementById('nextSlide')?.addEventListener('click', function() {
+  changeSlide(1);
+});
+
   // BounceButton
   const bounceButton = document.getElementById('bounceButton');
   if (bounceButton) {
