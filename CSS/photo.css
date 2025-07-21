@@ -325,6 +325,13 @@ footer p {
     padding-bottom: 0;
     margin-bottom: -60px;
   }
+  .slideshow h3 {
+    justify-self: center;
+    margin: 0;
+    font-size: 3em;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 500px) {
