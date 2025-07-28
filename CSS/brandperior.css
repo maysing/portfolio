@@ -3,9 +3,11 @@
   margin: 0;
 }
 
+
 body {
   background-color: rgb(0, 0, 0);
 }
+
 
 .grid-container {
   display: grid;
@@ -16,6 +18,12 @@ body {
   margin: 0 auto;
   margin-bottom: 80px;
 }
+
+
+.intro {
+  font-size: 16px;
+}
+
 
 #top-section img {
   width: 20%;
@@ -29,19 +37,23 @@ body {
   overflow: hidden;
 }
 
+
 .black-area {
   height: 900px;
   background-color: black;
   margin-top: -1050px;
 }
 
+
 #thrifty {
   height: 310px;
 }
 
+
 #boule-img {
   height: 310px;
 }
+
 
 .fullwidth-section {
   width: 100%;
@@ -49,10 +61,12 @@ body {
   margin-bottom: 80px;
 }
 
+
 #rityta {
   width: 100%;
   height: 90%;
 }
+
 
 #oset {
   width: 100%;
@@ -60,15 +74,18 @@ body {
   margin-top: 10px;
 }
 
+
 .fullwidth-section :hover {
   opacity: 90%;
   cursor: pointer;
 }
 
+
 .logo {
   font-size: 20px;
   color: rgb(255, 255, 255);
 }
+
 
 .sections a {
   color: rgb(255, 255, 255);
@@ -77,19 +94,24 @@ body {
   color: #f47422;
 }
 
+
 .sections a:hover {
   animation: bounce 0.2s;
 }
 
+
 #bounceButton {
   margin-bottom: 100px;
+
 
   margin-top: 100px;
 }
 
+
 #target {
   height: 100px;
 }
+
 
 h1 {
   margin-top: 200px;
@@ -100,6 +122,7 @@ h1 {
   text-align: center;
 }
 
+
 .bouncy-button {
   background-color: #f47422;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 0, 0, 0.6),
@@ -107,9 +130,11 @@ h1 {
   color: black;
 }
 
+
 .bouncy-button:hover {
   background-color: #f08c4d;
 }
+
 
 #icons {
   width: 465px;
@@ -118,11 +143,13 @@ h1 {
   margin-bottom: 100px;
 }
 
+
 #target {
   justify-self: center;
   font-size: 22px;
   padding-top: 100px;
 }
+
 
 p {
   width: 500px;
@@ -135,25 +162,30 @@ p {
   margin-bottom: 40px;
 }
 
+
 .light p {
   color: #000000;
   margin-top: -40px;
   margin-bottom: 60px;
 }
 
+
 #boule-text {
   padding-top: 200px;
   height: 300px;
 }
+
 
 #boule-text h5 {
   color: #000000;
   font-size: 30px;
 }
 
+
 #boule-text p {
   margin-top: 20px;
 }
+
 
 .light {
   background-color: white;
@@ -162,33 +194,41 @@ p {
   box-sizing: border-box;
 }
 
+
 footer {
   background: linear-gradient(to bottom, rgba(0, 0, 255, 0), blue);
   margin-top: 200px;
 }
 
+
 footer p {
   color: white;
 }
 
+
 .eskils img {
+
 
   height: auto;
   width: auto;
 }
 
+
 .eskils {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
+  margin-left: 10%;
   align-items: center;
   flex-direction: row;
   gap: 10px;
 }
 
+
 #video {
   height: 740px;
 }
+
 
 #webs {
   width: 100%;
@@ -197,10 +237,13 @@ footer p {
   align-items: center;
 }
 
+
 #richly {
   margin-top: 10px;
 
+
 }
+
 
 #lillsjön {
   width: 600px;
@@ -208,62 +251,101 @@ footer p {
   padding-left: 40px;
 }
 
+
 #webs {
   margin-top: -60px;
 }
 
 
 
+
+
+
 footer {
   background: linear-gradient(to bottom, rgba(255, 115, 0, 0), rgb(255, 102, 0));
   opacity: 70%;
-  bottom: 0; 
+  bottom: 0;
   width: 100%;
   z-index: 1000;
   overflow: hidden;
 }
 
-.brandperior {
-  background-color: black;
-  display: flex; 
-  justify-content: center;
-  padding: 100px;
 
+#symboler {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  padding: 50px;
 }
 
-#brandperior-logo {
-  width: 300px;
-}
+
+
 
 .brandperior-area {
-  background-color: black;
-  display: grid;
-  grid-template-columns: repeat(3, auto); /* Adjust grid to fit larger items */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
+
 .brandperior-area2 {
-  margin-top: 100px;
   background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: repeat(3, auto); /* Adjust grid to fit larger items */
 }
 
+
+.brandperior-area .grid-item {
+  width: 100%; /* Ensure videos take full width */
+  max-width: 600px; /* Optional: Limit video width */
+}
+
+
 .brandperior-area .grid-item img,
 .brandperior-area .grid-item video {
-  width: 100%; /* Scale down to fit the container */
-  max-width: 700px; /* Maintain a maximum width */
-  height: auto; /* Preserve aspect ratio */
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
 }
+
+
+#disclaimer {
+  color: rgb(145, 145, 145);
+  font-size: 20px;
+  text-align: center;
+  width: 600px;
+  margin-top: 0px;
+  font-size: 12px;
+}
+
 
 #strategy {
-  height: 500px;
+  height: 600px;
+  width: 600px;
+  margin-top: 90px;
+  margin-right: 30px;
 }
 
+
 #design {
-  height: 280px;
-  margin-top: 100px;
- margin-right: 100px;
+  height: 700px;
+  margin-top: 80px;
+  margin-right: 30px;
+  position: relative;
+  margin-left: 40px; /* Adjust as needed */
 }
+
+
+#webb {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  margin-top: 77px;
+  margin-left: 10px;
+  position: relative;
+}
+
 
 .brandperior-area p {
   color: rgb(88, 88, 88);
@@ -272,7 +354,9 @@ footer {
   margin-top: -150px;
   margin-left: 100px;
 
+
 }
+
 
 #flaska {
   height: 400px;
@@ -280,17 +364,20 @@ footer {
   object-fit: cover;
 }
 
+
 #exist {
   height: 380px;
   width: 380px;
-  object-fit: cover; 
-  padding-top: 30px; 
+  object-fit: cover;
+  padding-top: 70px;
 }
+
 
 .brandperior-area2 .grid-item {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 
 #diagram {
   height: 400px;
@@ -298,17 +385,11 @@ footer {
   object-fit: cover;
 }
 
-#webb {
-  height: 700px;
-  width: 700px;
-  object-fit: cover;
-  margin-top: -100px;
-  margin-left: -100px;
-}
 
 #space {
   height: 200px;
 }
+
 
 .hamburger .bar {
   background-color: rgb(255, 255, 255);
@@ -317,29 +398,77 @@ footer {
 
 
 
+.eskils-responsive {
+  display: none;
+  width: 80%;
+  justify-content: center;
+  justify-self: center;
+  margin-left: 15%;
+}
+
+
+.eskils-responsive img {
+  width: 80%;
+  padding-bottom: 30px;
+}
+
+
+.eskils-responsive video {
+  width: 80%;
+  padding-bottom: 30px;
+}
+
+
+#webs-mobile {
+  display: none;
+}
+
 
 @media (max-width: 1365px) {
+
 
   #eskils img {
     height: 300px;
     width: auto;
   }
 
+
   #boule {
     margin-top: 50px;
     width: 400px;
   }
+
 
   #boule-text {
     padding-top: 100px;
     height: 300px;
   }
 
-  .brandperior-area {
-    display: flex;
-    flex-direction: column;
+
+  .eskils {
+    margin-top: -100px;
   }
+
+
+  #lillsjön {
+    margin-right: 30px;
+    margin-top: -30px;
+  }
+
+
+  #webb {
+    margin-left: 20px;
+  }
+
+
+  #design {
+    margin-left: 100px;
+    margin-top: -70px;
+  }
+
+
 }
+
 
 @media (max-width: 1125px) {
   #boule {
@@ -347,19 +476,23 @@ footer {
     width: 400px;
   }
 
+
   #boule-text {
     padding-top: 100px;
     height: 300px;
   }
+
 
   #boule-text h5 {
     color: #000000;
     font-size: 20px;
   }
 
+
   #boule-text p {
     width: 300px;
   }
+
 
   p {
     font-size: 18px;
@@ -369,34 +502,119 @@ footer {
     font-size: 2rem;
   }
 
+
+  #richly {
+    margin-top: -200px;
+  }
+
+
+  #symboler {
+    width: 75%;
+    padding: 20px;
 }
+ 
+  .brandperior-area2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .brandperior-area2 .grid-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+  }
+
 
 @media (max-width: 1000px) {
   .brandperior-area .grid-item img,
   .brandperior-area .grid-item video {
     max-width: 500px;
   }
-}
 
-@media (max-width: 815px) {
+  .brandperior-area {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+
+  .eskils {
+    margin-top: -200px;
+  }
+
+
   .grid-container {
     grid-template-columns: 1fr;
   }
+
+
+    .brandperior-area2 {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 815px) {
+
 
   h1 {
     padding-left: 30px;
     padding-right: 30px;
   }
+
+
+  .eskils {
+    display: none;
+  }
+
+
+  .eskils-responsive {
+    display: block;
+  }
+
+
+  #webs-mobile {
+    display: flex;
+    width: 100%;
+    justify-self: center;
+
+
+  }
+
+
+  #webs {
+    display: none;
+  }
 }
 
+
 @media (max-width: 595px) {
+
 
   p {
     width: 200px;
     font-size: 14px;
   }
 
+
   h1 {
     font-size: 1.5rem;
+    margin-top: 70px;
+  }
+
+
+  #lillsjön {
+    margin-top: -200px;
+  }
+
+
+  #disclaimer {
+    font-size: 10px;
+    margin-top: 20px;
+    max-width: 90%;
   }
 }
