@@ -73,3 +73,15 @@ document.getElementById('nextSlide')?.addEventListener('click', function() {
     });
   }
 });
+
+document.addEventListener('click', function (event) {
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.hamburger-menu');
+
+  if (hamburger && menu) {
+    if (!hamburger.contains(event.target) && !menu.contains(event.target)) {
+      menu.classList.remove('active');
+      hamburger.classList.remove('active');
+    }
+  }
+});
