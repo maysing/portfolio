@@ -193,6 +193,12 @@ p {
   box-sizing: border-box;
 }
 
+.centered {
+  overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 
 footer {
   background: linear-gradient(to bottom, rgba(0, 0, 255, 0), blue);
@@ -254,10 +260,6 @@ footer p {
 #webs {
   margin-top: -60px;
 }
-
-
-
-
 
 
 footer {
