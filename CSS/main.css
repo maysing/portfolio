@@ -242,17 +242,19 @@ h5 {
               0 0 15px rgba(0, 123, 255, 0.6),
               0 0 30px rgba(0, 123, 255, 0.4);
   animation: bounce-button 1.5s infinite, glow 1.5s infinite alternate;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  justify-self: center;
-  margin-top: 20px;
+
+  /* Centrera stabilt på alla enheter */
+  display: block;
+  margin: 20px auto;
+
+  /* Hindra iOS från att justera storleken */
+  -webkit-text-size-adjust: none;
 }
 
 .bouncy-button:hover {
   background-color: #0056b3;
 }
+
 
 /* Animation för studs */
 @keyframes bounce-button {
